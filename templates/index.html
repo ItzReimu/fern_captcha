@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fern_captcha</title>
+  </head>
+  <body>
+    <h1>请输入验证码</h1>
+    <form method="post">
+      <p><img src="{{ url_for('captcha') }}" alt="验证码图片"></p>
+      <p><input type="text" name="captcha" placeholder="输入验证码"></p>
+      <p><input type="submit" value="提交"></p>
+    </form>
+    {% if message %}
+      <p style="color: red;">{{ message }}</p>
+    {% endif %}
+  </body>
+</html>
