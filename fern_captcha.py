@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.secret_key = "helloferncaptcha12345"
 
 # 字体文件路径
-font_path = "C:\\Users\\Administrator\\Downloads\\YaHei.ttf"
+font_path = " "
 
 
 
